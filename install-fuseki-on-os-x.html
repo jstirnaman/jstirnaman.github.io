@@ -2,27 +2,29 @@
 <head>
 </head>
 <body>
-<h1>Install Fuseki (with Jena and TDB) on OS X</h1>
+<h1>Installing Fuseki (with Jena and TDB) on OS X</h1>
 <h2>Notes</h2>
-  <p>Apache Jena downloads page</p>
+<dl>
+  <dd><a href="http://www.apache.org/dist/jena/binaries/">Apache Jena binaries downloads</a></p></dd>
+</dl>
 <h2>Get Started</h2>
 <ol>
-  <li>Download and extract the Jena binary
+  <li>Download and extract the Jena binary:</br>
     <code>
-      $ curl -O http://www.apache.org/dist/jena/binaries/jena-fuseki-1.0.0-distribution.tar.gz
+      $ curl -O http://www.apache.org/dist/jena/binaries/jena-fuseki-1.0.0-distribution.tar.gz<br/>
       $ tar xvfz jena-fuseki*.gz
     </code>
   </li>
   <li>
-    Make fuseki-server executable
+  Make fuseki-server executable:</br>
     <code>
-      $ cd ../jena-fuseki-1.0.0
+      $ cd jena-fuseki-1.0.0
       $ chmod +x fuseki-server s-*
     </code>
   </li>
   <li>
-    Start fuseki-server.
-    <p>These options start fuseki-server with an in-memory, non-persistent datastore:</p>
+  Start fuseki-server:</br>
+  These options start fuseki-server with an in-memory, non-persistent datastore:<br/>
     <code>
       $ ./fuseki-server --update --mem /ds
     </code>
